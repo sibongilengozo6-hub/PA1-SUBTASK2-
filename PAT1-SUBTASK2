@@ -1,0 +1,31 @@
+# include <iostream>
+using namespace std;
+
+int main() {
+	int temp1, temp2, temp3;
+	// Declare variable for temperature reading temp1, temp2, temp3
+	
+	// Input the first temperature reading
+	cout << " Enter the first temperature reading (Degrees):";
+	cin >> temp1;
+	
+   // Input the second temperatuire reading
+   cout << "Enter the second temperature reading (Degrees):";
+   cin >> temp2;
+   
+   if (temp2 - temp1 > 50) {
+   // Check the increase in temperature if (temp1 - temp2 > 50) 
+   cout << "Reduce  fryer heat before taking the third reading." << endl;
+   
+   cout << "Enter the third temperature reading (Degrees): "<< endl;
+   cin >> temp3;
+   
+   if (temp3 >=150 && temp3 <190){
+	   cout << "You may start frying the magwinya ." << endl;
+   }
+   }else {
+	   cout << " Oil is not ready for fying." << endl;
+   }
+   return 0;
+   
+}
